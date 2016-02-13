@@ -20,6 +20,7 @@ var converter = {
             put = 0;
         input = input.split(/[\s-]/);
 
+        if(input == "one million") return 1000000;
         if((input.indexOf('thousand') == -1)){
             put = converter.wordToNumberByThrees(input.join(' '));
         }
